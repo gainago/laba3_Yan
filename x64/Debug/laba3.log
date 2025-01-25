@@ -1,0 +1,132 @@
+﻿  main.cpp
+D:\Лабы по проге\laba3\Person.h(32,40): warning C4244: return: преобразование "const float" в "int", возможна потеря данных
+D:\Лабы по проге\laba3\Person.h(34,40): warning C4244: return: преобразование "const float" в "int", возможна потеря данных
+D:\Лабы по проге\laba3\Tests.h(393,2): warning C4805: ==: небезопасное смешение типа "int" и типа "bool" в операции
+D:\Лабы по проге\laba3\ArraySequence.h(86,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\ArraySequence.h(77,7): message : во время компиляции функции-члена класс шаблон "void ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::InsertAt(const DictionaryOnSequence<int,T>::KeyValuePair &,int)"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\DictionaryOnSequence.h(19,33): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\SparseVector.h(8,34): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "DictionaryOnSequence<int,T>"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\Tests.h(538,20): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "SparseVector<int>"
+D:\Лабы по проге\laba3\ArraySequence.h(68,14): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\ArraySequence.h(64,7): message : во время компиляции функции-члена класс шаблон "void ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::Prepend(const DictionaryOnSequence<int,T>::KeyValuePair &)"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\ArraySequence.h(61,41): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\ArraySequence.h(58,7): message : во время компиляции функции-члена класс шаблон "void ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::Append(const DictionaryOnSequence<int,T>::KeyValuePair &)"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\DictionaryOnSequence.h(68,20): message : см. первую ссылку на "ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::Append" в "DictionaryOnSequence<int,T>::Add"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\SparseVector.h(87,27): message : см. первую ссылку на "DictionaryOnSequence<int,T>::Add" в "SparseVector<int>::Append"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\Tests.h(572,15): message : см. первую ссылку на "SparseVector<int>::Append" в "Test_SparseVector_Append"
+D:\Лабы по проге\laba3\ArraySequence.h(55,29): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\ArraySequence.h(53,6): message : во время компиляции функции-члена класс шаблон "int ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::GetLength(void) const"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\DictionaryOnSequence.h(73,9): message : см. первую ссылку на "ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::GetLength" в "DictionaryOnSequence<int,T>::Remove"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\SparseVector.h(56,34): message : см. первую ссылку на "DictionaryOnSequence<int,T>::Remove" в "SparseVector<int>::Set"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\Tests.h(557,12): message : см. первую ссылку на "SparseVector<int>::Set" в "Test_SparseVector_SetAndGet"
+D:\Лабы по проге\laba3\ArraySequence.h(30,48): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\ArraySequence.h(24,4): message : во время компиляции функции-члена класс шаблон "T ArraySequence<T>::GetLast(void) const"
+          with
+          [
+              T=DictionaryOnSequence<int,int>::KeyValuePair
+          ]
+D:\Лабы по проге\laba3\LinkedList.h(74,20): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\LinkedList.h(72,9): message : во время компиляции функции-члена класс шаблон "int LinkedList<T>::GetLength(void) const"
+          with
+          [
+              T=Person
+          ]
+D:\Лабы по проге\laba3\LinkedListSequence.h(32,3): message : см. первую ссылку на "LinkedList<T>::GetLength" в "LinkedListSequence<T>::GetLength"
+          with
+          [
+              T=Person
+          ]
+D:\Лабы по проге\laba3\SortedSequenceOnSequence.h(28,3): message : см. первую ссылку на "LinkedListSequence<T>::GetLength" в "SortedSequenceOnSequence<Person>::GetLength"
+          with
+          [
+              T=Person
+          ]
+D:\Лабы по проге\laba3\Histogram.h(39,13): message : см. первую ссылку на "SortedSequenceOnSequence<Person>::GetLength" в "Histogram<Person>::CreateHistogram"
+D:\Лабы по проге\laba3\Tests.h(595,51): message : см. первую ссылку на "Histogram<Person>::CreateHistogram" в "Test_CreateHistogram_YearOfBirth"
+D:\Лабы по проге\laba3\LinkedListSequence.h(9,16): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "LinkedList<T>"
+          with
+          [
+              T=Person
+          ]
+D:\Лабы по проге\laba3\SortedSequenceOnSequence.h(9,24): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "LinkedListSequence<T>"
+          with
+          [
+              T=Person
+          ]
+D:\Лабы по проге\laba3\Tests.h(588,35): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "SortedSequenceOnSequence<Person>"
+D:\Лабы по проге\laba3\SparseVector.h(99,22): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\SparseVector.h(97,10): message : во время компиляции функции-члена класс шаблон "void SparseVector<int>::Resize(size_t)"
+D:\Лабы по проге\laba3\SparseVector.h(49,19): message : см. первую ссылку на "SparseVector<int>::Resize" в "SparseVector<int>::Set"
+D:\Лабы по проге\laba3\Tests.h(557,12): message : см. первую ссылку на "SparseVector<int>::Set" в "Test_SparseVector_SetAndGet"
+D:\Лабы по проге\laba3\DynamicArray.h(92,29): warning C4267: аргумент: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\DynamicArray.h(89,7): message : во время компиляции функции-члена класс шаблон "void DynamicArray<T>::Append(const T &)"
+          with
+          [
+              T=DictionaryOnSequence<int,int>::KeyValuePair
+          ]
+D:\Лабы по проге\laba3\ArraySequence.h(113,17): message : см. первую ссылку на "DynamicArray<T>::Append" в "ArraySequence<DictionaryOnSequence<int,T>::KeyValuePair>::Concat"
+          with
+          [
+              T=DictionaryOnSequence<int,int>::KeyValuePair
+          ]
+          and
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\ArraySequence.h(9,18): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "DynamicArray<T>"
+          with
+          [
+              T=DictionaryOnSequence<int,int>::KeyValuePair
+          ]
+D:\Лабы по проге\laba3\BinaryTree.h(256,44): warning C4267: return: преобразование из "size_t" в "int"; возможна потеря данных
+D:\Лабы по проге\laba3\BinaryTree.h(252,9): message : во время компиляции функции-члена класс шаблон "int BinaryTree<int>::BalanceFactor(BinaryTree<int>::Node<T> *) const"
+          with
+          [
+              T=int
+          ]
+D:\Лабы по проге\laba3\BinaryTree.h(301,21): message : см. первую ссылку на "BinaryTree<int>::BalanceFactor" в "BinaryTree<int>::Balance"
+D:\Лабы по проге\laba3\BinaryTree.h(165,9): message : см. первую ссылку на "BinaryTree<int>::Balance" в "BinaryTree<int>::Insert"
+D:\Лабы по проге\laba3\BinaryTree.h(451,14): message : см. первую ссылку на "BinaryTree<int>::Insert" в "BinaryTree<int>::operator +="
+D:\Лабы по проге\laba3\Tests.h(204,12): message : см. первую ссылку на "BinaryTree<int>::operator +=" в "Test_BinaryTree_Insert_Int"
+D:\Лабы по проге\laba3\Tests.h(172,18): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "BinaryTree<int>"
+  laba3.vcxproj -> D:\Лабы по проге\laba3\x64\Debug\laba3.exe
