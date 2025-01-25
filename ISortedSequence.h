@@ -1,8 +1,8 @@
 #pragma once
-#include <functional>
+//#include <functional>
 
-template <class T>
-using Comparator = std::function<bool(const T&, const T&)>;
+//template <class T>
+//using Comparator = std::function<bool(const T&, const T&)>;
 
 template <class T>
 class ISortedSequence

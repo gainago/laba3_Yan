@@ -9,6 +9,7 @@
 #include "SetOnBinaryTree.h"
 #include "Histogram.h"
 #include "SortedSequenceOnSequence.h"
+#include "Comparators.h"
 
 
 template<class T>
@@ -76,7 +77,7 @@ void EnterSequence(SortedSequenceOnSequence<T>* seq)
 void histogramMenu()
 {
     Histogram<int> histogram;
-    SortedSequenceOnSequence<int> sequence;
+    SortedSequenceOnSequence<int> sequence(compInt);
     EnterSequence<int>(&sequence);
 
     while (true)

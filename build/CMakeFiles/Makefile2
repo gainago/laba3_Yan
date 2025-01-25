@@ -81,12 +81,12 @@ clean: CMakeFiles/histogram_Executable.dir/clean
 CMakeFiles/histogram_Executable.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/goshagaina/Yan/laba3/build/CMakeFiles --progress-num=1,2 "Built target histogram_Executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/home/goshagaina/Yan/laba3/build/CMakeFiles --progress-num=1,2,3 "Built target histogram_Executable"
 .PHONY : CMakeFiles/histogram_Executable.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/histogram_Executable.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/goshagaina/Yan/laba3/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/goshagaina/Yan/laba3/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/histogram_Executable.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/goshagaina/Yan/laba3/build/CMakeFiles 0
 .PHONY : CMakeFiles/histogram_Executable.dir/rule

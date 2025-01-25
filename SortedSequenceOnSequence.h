@@ -7,16 +7,16 @@ class SortedSequenceOnSequence : public ISortedSequence<T>
 {
 private:
 	LinkedListSequence<T> list;
-	Comparator<T> comp;
-	bool (comp)(T const & first, T const &second);
+	//Comparator<T> comp;
+	bool (*comp)(T const & first, T const &second);
 public:
 	//SortedSequenceOnSequence() : comp(std::less<T>()) {}
 
-	SortedSequenceOnSequence(Comparator<T> comp = std::less<T>()) : comp(comp) {}
+	SortedSequenceOnSequence(bool (*comparator)(T const & first, T const &second)) : comp(comparator) {}
 
-	SortedSequenceOnSequence(const SortedSequenceOnSequence<T>& other, Comparator<T> comp = std::less<T>()) :list(other.list), comp(comp) {}
+	SortedSequenceOnSequence(const SortedSequenceOnSequence<T>& other, bool (*comparator)(T const & first, T const &second)) :list(other.list), comp(comparator) {}
 
-	SortedSequenceOnSequence(const LinkedListSequence<T>& other, Comparator<T> comp = std::less<T>()) : comp(comp)
+	SortedSequenceOnSequence(const LinkedListSequence<T>& other, bool (*comparator)(T const & first, T const &second)) : comp(comparator)
 	{
 		for (int i = 0; i != other.GetLength(); i++)
 		{
@@ -62,7 +62,8 @@ public:
 			{
 				return true;
 			}
-			if (comp(list.Get(mid), element))
+			//if (comp(list.Get(mid), element))
+			if(comp(list.Get(mid), element))
 			{
 				left = mid + 1;
 			}
@@ -87,7 +88,8 @@ public:
 	{
 		for (int i = 0; i != this->GetLength(); i++)
 		{
-			if (comp(element, this->Get(i)))
+			//if (comp(element, this->Get(i)))
+			if(comp(element, this->Get(i)))
 			{
 				list.InsertAt(element, i);
 				return;

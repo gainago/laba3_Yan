@@ -11,6 +11,7 @@
 #include "BinaryTree.h"
 #include <cassert> 
 #include <string>
+#include "Comparators.h"
 
 int array1[5] = { 1, 2, 3, 4, 5 };
 int array2[3] = { 2, 3, 4 };
@@ -329,7 +330,7 @@ void Test_BinTree_SearchBool_Int()
 
 void Test_SortedSequence_Add() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 
 	seq.Add(5);
 	seq.Add(3);
@@ -343,7 +344,7 @@ void Test_SortedSequence_Add()
 
 void Test_SortedSequence_Get() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	seq.Add(10);
 	seq.Add(20);
 	seq.Add(15);
@@ -355,7 +356,7 @@ void Test_SortedSequence_Get()
 
 void Test_SortedSequence_GetLength() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	seq.Add(1);
 	seq.Add(2);
 	seq.Add(3);
@@ -365,7 +366,7 @@ void Test_SortedSequence_GetLength()
 
 void Test_SortedSequence_GetFirstAndLast() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	seq.Add(30);
 	seq.Add(10);
 	seq.Add(20);
@@ -376,7 +377,7 @@ void Test_SortedSequence_GetFirstAndLast()
 
 void Test_SortedSequence_IsEmpty() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	assert(seq.IsEmpty() == true);
 
 	seq.Add(1);
@@ -385,7 +386,7 @@ void Test_SortedSequence_IsEmpty()
 
 void Test_SortedSequence_IndexOf() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	seq.Add(10);
 	seq.Add(20);
 	seq.Add(30);
@@ -396,7 +397,7 @@ void Test_SortedSequence_IndexOf()
 
 void Test_SortedSequence_GetSubsequence() 
 {
-	SortedSequenceOnSequence<int> seq;
+	SortedSequenceOnSequence<int> seq(compInt);
 	seq.Add(10);
 	seq.Add(20);
 	seq.Add(30);
@@ -585,7 +586,7 @@ void Test_CreateHistogram_YearOfBirth()
 	Person p2(1985, "Bob", "Johnson", 165, 60);
 	Person p3(1990, "Charlie", "Williams", 180, 80);
 	Person p4(1995, "David", "Brown", 160, 55);
-	SortedSequenceOnSequence<Person> seq;
+	SortedSequenceOnSequence<Person> seq(compPerson);
 	seq.Add(p1);
 	seq.Add(p2);
 	seq.Add(p3);
@@ -605,7 +606,7 @@ void Test_CreateHistogram_Height()
 	Person p2(1985, "Bob", "Johnson", 165, 60);
 	Person p3(1990, "Charlie", "Williams", 180, 80);
 	Person p4(1995, "David", "Brown", 160, 55);
-	SortedSequenceOnSequence<Person> seq;
+	SortedSequenceOnSequence<Person> seq(compPerson);
 	seq.Add(p1);
 	seq.Add(p2);
 	seq.Add(p3);
@@ -626,7 +627,7 @@ void Test_CreateHistogram_FirstNameLetter()
 	Person p2(1985, "Bob", "Johnson", 165, 60);
 	Person p3(1990, "Charlie", "Williams", 180, 80);
 	Person p4(1995, "David", "Brown", 160, 55);
-	SortedSequenceOnSequence<Person> seq;
+	SortedSequenceOnSequence<Person> seq(compPerson);
 	seq.Add(p1);
 	seq.Add(p2);
 	seq.Add(p3);
@@ -643,7 +644,7 @@ void Test_CreateHistogramInt()
 {
 	int arr[] = { 10, 20, 25, 30, 35, 40 };
 	LinkedListSequence<int>list(arr, 6);
-	SortedSequenceOnSequence<int> seq(list);
+	SortedSequenceOnSequence<int> seq(list, compInt);
 
 	Histogram<int> hist;
 	DictionaryOnSequence<std::string, int> histogram = hist.CreateHistogramInt(seq, 10);

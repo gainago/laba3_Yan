@@ -129,6 +129,30 @@ histogram_Executable/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/build
 .PHONY : histogram_Executable/fast
 
+Comparators.o: Comparators.cpp.o
+.PHONY : Comparators.o
+
+# target to build an object file
+Comparators.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/Comparators.cpp.o
+.PHONY : Comparators.cpp.o
+
+Comparators.i: Comparators.cpp.i
+.PHONY : Comparators.i
+
+# target to preprocess a source file
+Comparators.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/Comparators.cpp.i
+.PHONY : Comparators.cpp.i
+
+Comparators.s: Comparators.cpp.s
+.PHONY : Comparators.s
+
+# target to generate assembly for a file
+Comparators.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/Comparators.cpp.s
+.PHONY : Comparators.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... histogram_Executable"
+	@echo "... Comparators.o"
+	@echo "... Comparators.i"
+	@echo "... Comparators.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

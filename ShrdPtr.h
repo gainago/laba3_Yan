@@ -1,11 +1,11 @@
 #pragma once
-#include <type_traits>
+#include <type_traits> // нужно для конвертации от производных типов
 template <typename T>
 class ShrdPtr
 {
 private:
     T* ptr;
-    size_t* ref_count;
+    int* ref_count;
 
     void add_ref()
     {
@@ -30,7 +30,7 @@ private:
         }
     }
 
-    ShrdPtr(T* p, size_t* count)
+    ShrdPtr(T* p, int* count)
         : ptr(p), ref_count(count)
     {
         add_ref();
@@ -40,7 +40,7 @@ public:
     ShrdPtr() : ptr(nullptr), ref_count(nullptr) {}
 
     explicit ShrdPtr(T* p)
-        : ptr(p), ref_count(p ? new size_t(1) : nullptr) {}
+        : ptr(p), ref_count(p ? new int(1) : nullptr) {}
 
     ShrdPtr(const ShrdPtr<T>& other)
         : ptr(other.ptr), ref_count(other.ref_count)
@@ -116,7 +116,7 @@ public:
         if (p)
         {
             ptr = p;
-            ref_count = new size_t(1);
+            ref_count = new int(1);
         }
         else
         {
@@ -125,7 +125,7 @@ public:
         }
     }
 
-    size_t use_count() const
+    int use_count() const
     {
         return ref_count ? *ref_count : 0;
     }
