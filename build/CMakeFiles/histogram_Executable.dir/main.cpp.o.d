@@ -198,4 +198,5 @@ CMakeFiles/histogram_Executable.dir/main.cpp.o: \
   /home/goshagaina/Yan/laba3/BinaryTree.h \
   /home/goshagaina/Yan/laba3/ISet.h /home/goshagaina/Yan/laba3/Person.h \
   /usr/bin/../lib/gcc/x86_64-linux-gnu/13/../../../../include/c++/13/cassert \
-  /usr/include/assert.h /home/goshagaina/Yan/laba3/Comparators.h
+  /usr/include/assert.h /home/goshagaina/Yan/laba3/Comparators.h \
+  /home/goshagaina/Yan/laba3/PrintHistorgam.h

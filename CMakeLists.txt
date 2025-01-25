@@ -5,4 +5,5 @@ project(histogram VERSION 1 )
 add_executable(${PROJECT_NAME}_Executable 
 main.cpp
 Comparators.cpp
+PrintHistogram.cpp
 )

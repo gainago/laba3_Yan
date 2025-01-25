@@ -153,6 +153,30 @@ Comparators.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/Comparators.cpp.s
 .PHONY : Comparators.cpp.s
 
+PrintHistogram.o: PrintHistogram.cpp.o
+.PHONY : PrintHistogram.o
+
+# target to build an object file
+PrintHistogram.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o
+.PHONY : PrintHistogram.cpp.o
+
+PrintHistogram.i: PrintHistogram.cpp.i
+.PHONY : PrintHistogram.i
+
+# target to preprocess a source file
+PrintHistogram.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.i
+.PHONY : PrintHistogram.cpp.i
+
+PrintHistogram.s: PrintHistogram.cpp.s
+.PHONY : PrintHistogram.s
+
+# target to generate assembly for a file
+PrintHistogram.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/histogram_Executable.dir/build.make CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.s
+.PHONY : PrintHistogram.cpp.s
+
 main.o: main.cpp.o
 .PHONY : main.o
 
@@ -189,6 +213,9 @@ help:
 	@echo "... Comparators.o"
 	@echo "... Comparators.i"
 	@echo "... Comparators.s"
+	@echo "... PrintHistogram.o"
+	@echo "... PrintHistogram.i"
+	@echo "... PrintHistogram.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

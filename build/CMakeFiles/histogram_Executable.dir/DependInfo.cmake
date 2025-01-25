@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/goshagaina/Yan/laba3/Comparators.cpp" "CMakeFiles/histogram_Executable.dir/Comparators.cpp.o" "gcc" "CMakeFiles/histogram_Executable.dir/Comparators.cpp.o.d"
+  "/home/goshagaina/Yan/laba3/PrintHistogram.cpp" "CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o" "gcc" "CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o.d"
   "/home/goshagaina/Yan/laba3/main.cpp" "CMakeFiles/histogram_Executable.dir/main.cpp.o" "gcc" "CMakeFiles/histogram_Executable.dir/main.cpp.o.d"
   )
 

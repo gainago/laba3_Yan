@@ -4,7 +4,16 @@
 #include "DictionaryOnSequence.h"
 #include "SortedSequenceOnSequence.h"
 
- 
+int Min(int first, int second)
+{
+    if(first < second){
+    
+        return first;
+    }
+
+    return second;
+}
+
 template <class T>
 class Histogram
 {
@@ -18,7 +27,7 @@ private:
         for (int i = 0; i < numGroups; i++)
         {
             int start = i * range;
-            int end = std::min(start + range - 1, 25);
+            int end = Min(start + range - 1, 25);
             std::string group = std::string(1, alphabet[start]) + "-" + std::string(1, alphabet[end]);
             groups.Append(group);
         }
@@ -137,11 +146,11 @@ public:
     
 };
 
-void PrintHistogram(const DictionaryOnSequence<std::string, int>& histogram)
-    {
-        for (int i = 0; i < histogram.GetCount(); i++)
-        {
-            auto pair = histogram.GetByIndex(i);
-            std::cout << pair.key << ": " << pair.value << std::endl;
-        }
-    }
+// void PrintHistogram(const DictionaryOnSequence<std::string, int>& histogram)
+// {
+//     for (int i = 0; i < histogram.GetCount(); i++)
+//     {
+//         auto pair = histogram.GetByIndex(i);
+//         std::cout << pair.key << ": " << pair.value << std::endl;
+//     }
+// }

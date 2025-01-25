@@ -10,5 +10,11 @@
   "command": "/usr/bin/clang++-18   -g -o CMakeFiles/histogram_Executable.dir/Comparators.cpp.o -c /home/goshagaina/Yan/laba3/Comparators.cpp",
   "file": "/home/goshagaina/Yan/laba3/Comparators.cpp",
   "output": "CMakeFiles/histogram_Executable.dir/Comparators.cpp.o"
+},
+{
+  "directory": "/home/goshagaina/Yan/laba3/build",
+  "command": "/usr/bin/clang++-18   -g -o CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o -c /home/goshagaina/Yan/laba3/PrintHistogram.cpp",
+  "file": "/home/goshagaina/Yan/laba3/PrintHistogram.cpp",
+  "output": "CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o"
 }
 ]

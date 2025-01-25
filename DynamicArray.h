@@ -4,7 +4,7 @@ template <class T>
 class DynamicArray
 {
 private:
-	size_t size;
+	int size;
 	T* data;
 public:
 	DynamicArray()
@@ -23,7 +23,7 @@ public:
 		}
 	}
 
-	DynamicArray(size_t size)
+	DynamicArray(int size)
 	{
 		this->size = size;
 		data = new T[size];
@@ -48,7 +48,7 @@ public:
 		delete[] data;
 	}
 
-	size_t GetSize() const
+	int GetSize() const
 	{
 		return this->size;
 	}
@@ -71,10 +71,10 @@ public:
 		this->data[index] = value;
 	}
 
-	void Resize(size_t newSize)
+	void Resize(int newSize)
 	{
 		T* newData = new T[newSize];
-		size_t minSize = (size < newSize) ? size : newSize;
+		int minSize = (size < newSize) ? size : newSize;
 
 		for (int i = 0; i < minSize; i++)
 		{

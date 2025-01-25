@@ -10,6 +10,7 @@
 #include "Histogram.h"
 #include "SortedSequenceOnSequence.h"
 #include "Comparators.h"
+#include "PrintHistorgam.h"
 
 
 template<class T>
