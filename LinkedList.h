@@ -31,6 +31,8 @@ public:
 
     LinkedList(const T* items, int count)
     {
+        head = nullptr;
+        tail = nullptr;
         this->size = 0;
         for (int i = 0; i < count; i++)
         {
@@ -38,7 +40,7 @@ public:
         }
     }
 
-    LinkedList(const LinkedList<T>& other)
+    LinkedList(const LinkedList<T>& other) 
     {
         this->size = 0;
         this->head = this->tail = NULL;

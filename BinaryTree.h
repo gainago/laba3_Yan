@@ -3,7 +3,6 @@
 
 #include <string>
 
-
 int Max(int first, int second){
     if(first > second){
         return first;

@@ -1,5 +1,6 @@
 #pragma once
 #include "DictionaryOnSequence.h"
+#include <iostream>
 
 template<typename T>
 class SparseVector 

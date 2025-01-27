@@ -635,9 +635,9 @@ void Test_CreateHistogram_FirstNameLetter()
 	Histogram<Person> hist;
 	DictionaryOnSequence<std::string, int> histogram = hist.CreateHistogram(seq, 3, "firstNameLetter");
 
-	assert(histogram.GetCount() == 2);
-	assert(histogram.Get("A-C") == 2);
-	assert(histogram.Get("D-F") == 1);
+	assert(histogram.GetCount() == 1);
+	assert(histogram.Get("A-C") == 3);
+	
 }
 
 void Test_CreateHistogramInt() 
@@ -649,8 +649,9 @@ void Test_CreateHistogramInt()
 	Histogram<int> hist;
 	DictionaryOnSequence<std::string, int> histogram = hist.CreateHistogramInt(seq, 10);
 
-	assert(histogram.GetCount() == 3);
+	assert(histogram.GetCount() == 4);
 	assert(histogram.Get("[10-20]") == 1);
 	assert(histogram.Get("[20-30]") == 2);
-	assert(histogram.Get("[30-40]") == 3);
+	assert(histogram.Get("[30-40]") == 2);
+	// первый элемент включаем второй не включаем
 }

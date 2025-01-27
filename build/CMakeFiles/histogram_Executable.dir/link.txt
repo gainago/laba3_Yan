@@ -1,1 +1,0 @@
-/usr/bin/clang++-18 -g CMakeFiles/histogram_Executable.dir/main.cpp.o CMakeFiles/histogram_Executable.dir/Comparators.cpp.o CMakeFiles/histogram_Executable.dir/PrintHistogram.cpp.o -o histogram_Executable 
